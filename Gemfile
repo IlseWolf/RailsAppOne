@@ -45,3 +45,19 @@ group :development do
   gem 'spring'
 end
 
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
+
+
+
+
