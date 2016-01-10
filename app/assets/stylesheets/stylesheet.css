@@ -2,6 +2,7 @@
 
 h1{
     color: #18bc9c;
+    margin-top: 60px;
 }
 
 .static{
@@ -85,5 +86,12 @@ footer .footer-below {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/*table*/
+
+.producttable {
+    width:80%;
+    margin-left:0;
 
 }
