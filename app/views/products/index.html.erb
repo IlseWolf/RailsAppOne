@@ -1,30 +1,51 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Products</h1>
+<h1 class="titelproductpage">Waiting for new owners</h1>
 
-<table class=producttable>
+<!--
+<table class="producttable">
   <thead>
-    <tr>
+    <tr class="table">
       <th>Name</th>
       <th>Description</th>
       <th>Image url</th>
+      <th>Colour</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
+      <tr class="table">
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
+        <td><%= product.colour %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> 
+--> 
+
+
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+      <div class="col-sm-2 col-md-4">
+        <h2><%= product.name %></h2>
+        <div class="owlinfotable text-center">
+            <p><%= image_tag(product.image_url, class:"img-responsive owlimage") %></p>
+            <p><i><%= product.latin_name %></i></p>
+            <p><%= product.description %></p>
+            <p><%= product.colour %></p>
+        </div>
+      </div> <!--column-->
+    <% end %>
+  </div>
+</div>
 
 <br>
 

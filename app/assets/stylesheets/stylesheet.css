@@ -1,8 +1,23 @@
-/* overal*/
+/* typograhpy*/
 
 h1{
     color: #18bc9c;
     margin-top: 60px;
+}
+
+h2{
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#4c4c4c; 
+}
+
+p{
+    color:#4c4c4c;
+}
+
+.illegal h3{
+    font-style:italic;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#777
 }
 
 .static{
@@ -11,21 +26,7 @@ h1{
 	color:#777
 }
 
-/*index*/
-.my-image{
-  	margin:auto;
-	margin-top:20px;
-  	margin-bottom:20px
-}
-
-.illegal h3{
-	font-style:italic;
-	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	color:#777
-}
-
-
-/*navbar and footer*/
+/*navbar and footer on application.html*/
 
 .navbar-fixed-top .navbar-brand {
     font-size: 2em;
@@ -88,10 +89,17 @@ footer .footer-below {
     width: 100%;
 }
 
-/*table*/
+/*product page: views/products/index*/
+.titelproductpage {
+    margin-left:10px; 
+}
 
-.producttable {
-    width:80%;
-    margin-left:0;
+/*table on views/products/index*/
+.owlinfotable {
+    border:1px solid #18bc9c;
+}
 
+.owlimage{
+    margin:auto;
+    margin-top:20px;
 }
