@@ -23,9 +23,6 @@
     <%= f.label :image_url %><br>
     <%= f.text_field :image_url %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
   <div class="field">
     <%= f.label :colour %><br>
     <%= f.text_field :colour %>
@@ -33,5 +30,13 @@
   <div class="field">
   <%= f.label :latin_name %><br>
   <%= f.text_field :latin_name %>
-</div>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
 <% end %>
