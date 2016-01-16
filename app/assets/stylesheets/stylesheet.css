@@ -74,6 +74,7 @@ p{
 footer {
     color: #18bc9c;
     text-transform:uppercase;
+    font-size:12px;
 }
 
 footer .footer-above {

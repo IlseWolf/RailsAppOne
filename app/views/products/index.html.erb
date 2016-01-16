@@ -2,6 +2,8 @@
 
 <h1 class="titelproductpage">Waiting for new owners</h1>
 
+<p><% @test_variable %></p>
+
 <!--
 <table class="producttable">
   <thead>
@@ -39,7 +41,7 @@
             <p><i><%= product.latin_name %></i></p>
             <p><%= product.description %></p>
             <p><%= product.colour %></p>
-            <p><%= product.price %></p>
+            <p> € <%= product.price %></p>
         </div>
       </div> <!--column-->
     <% end %>
