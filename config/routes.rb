@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-  get 'static_page/order'
-
-  get 'static_page/cd'
-
-  get 'static_page/..'
 
   resources :products
   get 'static_pages/about'
