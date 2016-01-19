@@ -83,11 +83,11 @@ footer .footer-above {
 }
 
 footer .footer-below {
-    padding: 25px 0;
+    padding:25px 0;
     background-color:#F8F8F8;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
 
 /*product page: views/products/index*/
