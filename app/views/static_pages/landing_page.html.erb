@@ -1,12 +1,14 @@
 <h1> Featured Product <h1>
 
 <div class="owlinfotable text-center">
-	<p><%= image_tag(@featured_product.image_url, class:"img-responsive owlimage") %></p>
+	<p class="img-responsive owlimage" > <%= image_tag(@featured_product.image_url) %>  </p>
     <p><i><%= @featured_product.latin_name %></i></p>
     <p><%= @featured_product.description %></p>
     <p><%= @featured_product.colour %></p>
     <p> € <%= @featured_product.price %></p>
 </div>
+
+
 
 
     

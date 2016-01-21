@@ -37,7 +37,7 @@
       <div class="col-sm-2 col-md-4">
         <h2><%= product.name %></h2>
         <div class="owlinfotable text-center">
-            <p><%= image_tag(product.image_url, class:"img-responsive owlimage") %></p>
+            <p class="img-responsive owlimage"> <%= image_tag(product.image_url) %></p>
             <p><i><%= product.latin_name %></i></p>
             <p><%= product.description %></p>
             <p><%= product.colour %></p>
