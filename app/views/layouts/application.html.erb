@@ -63,7 +63,9 @@
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
   <div class="item<%= " active" if product == @products.first %>">
+      <div class="carousel-imgage">
       <%= image_tag(product.image_url) %>
+      </div>
       <div class="carousel-caption">
         <%= product.name %>
       </div>
@@ -90,7 +92,7 @@
       <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                Copyright &copy; Your Website 2014
+                Copyright &copy; owls R'Us
             </div>
         </div>
       </div>
