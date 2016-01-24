@@ -1,0 +1,216 @@
+/* line 1, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/ilsewolf/Documents/Ruby /RailsAppOne/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*body*/
+
+
+body { 
+    padding-top: 50px; 
+}
+/* typograhpy*/
+
+h1{
+    color: #18bc9c;
+    margin-top: 60px;
+}
+
+h2{
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#4c4c4c; 
+    font-size:250% 
+}
+
+p{
+    color:#4c4c4c;
+}
+
+.illegal h3{
+    font-style:italic;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#777
+}
+
+.static{
+	margin-top:80px;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#777
+}
+
+/*navbar on application.html*/
+
+.navbar-fixed-top .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.navbar-fixed-top.navbar-shrink {
+    padding: 10px 0;
+}
+
+.navbar-fixed-top.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+.navbar .navbar-nav li a:hover{
+	color: #18bc9c;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+/*carousel on apllication.html*/
+
+.carousel-imgage {
+    text-align:center;
+    margin: 0 auto;    
+}
+
+.carousel-caption{
+    font-size:20px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*footer on apllication.html*/
+
+footer {
+    color: #18bc9c;
+    text-transform:uppercase;
+    font-size:12px;
+}
+
+.footer-below {
+    padding:25px 0;
+    background-color:#F8F8F8;
+    position:absolute;
+    width:100%;
+    bottom:0;
+}
+
+/*product page: views/products/index*/
+.titelproductpage {
+    margin-left:10px; 
+}
+
+/*table on views/products/index*/
+.owlinfotable {
+    border:1px solid #18bc9c;
+    border-radius:10px
+}
+
+.owlimage{
+    margin:auto;
+    margin-top:20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
