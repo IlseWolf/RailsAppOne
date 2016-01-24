@@ -90,17 +90,18 @@ p{
 /*footer on apllication.html*/
 
 footer {
-    color: #18bc9c;
-    text-transform:uppercase;
-    font-size:12px;
-}
-
-.footer-below {
     padding:25px 0;
     background-color:#F8F8F8;
     position:absolute;
     width:100%;
     bottom:0;
+}
+
+.navbar-fixed-bottom p{
+    text-transform:uppercase;
+    color:#18bc9c;
+    font-size:12px;
+    margin-top:2%; 
 }
 
 /*product page: views/products/index*/
