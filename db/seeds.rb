@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Product.create(:name => "Burrowing Owl", :description => "Wingspan of 50-60 cm, lives on the ground", :image_url => "burrowingowl.jpg", :colour => "Brown", :latin_name => "Athene cunicalaria", :price =>"100")
+#Product.create(:name => "Burrowing Owl", :description => "Wingspan of 50-60 cm, lives on the ground", :image_url => "burrowingowl.jpg", :colour => "Brown", :latin_name => "Athene cunicalaria", :price =>"100")
 
-Product.create(:name => "Spotted Wood OWl", :description => "Lives in Asia", :image_url => "spottedwoodowl.jpg", :colour => "Brown", :latin_name => "Strix seloputo", :price =>"100")
+#Product.create(:name => "Spotted Wood OWl", :description => "Lives in Asia", :image_url => "spottedwoodowl.jpg", :colour => "Brown", :latin_name => "Strix seloputo", :price =>"100")
 
-Product.create(:name => "Oriental Bay Owl", :description => "Family of the Barn Owl", :image_url => "orientalbayowl.jpg", :colour => "Brown", :latin_name => "Phodilus badius", :price =>"100")
+#Product.create(:name => "Oriental Bay Owl", :description => "Family of the Barn Owl", :image_url => "orientalbayowl.jpg", :colour => "Brown", :latin_name => "Phodilus badius", :price =>"100")

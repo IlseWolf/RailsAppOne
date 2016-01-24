@@ -34,10 +34,12 @@
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-sm-2 col-md-4">
+      <div class="col-sm-12 col-md-4">
         <h2><%= product.name %></h2>
         <div class="owlinfotable text-center">
-            <p class="img-responsive owlimage"> <%= image_tag(product.image_url) %></p>
+            <div class="img-thumbnail owlimage"> 
+              <%= image_tag(product.image_url)  %>
+            </div>
             <p><i><%= product.latin_name %></i></p>
             <p><%= product.description %></p>
             <p><%= product.colour %></p>
