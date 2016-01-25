@@ -90,14 +90,21 @@ p{
 /*footer on apllication.html*/
 
 footer {
-    padding:25px 0;
+    max-height:80px;
     background-color:#F8F8F8;
-    position:absolute;
+    position:fixed;
     width:100%;
-    bottom:0;
+    bottom:0; 
 }
 
-.navbar-fixed-bottom p{
+footer p{
+    text-transform:uppercase;
+    color:#18bc9c;
+    font-size:12px;
+    margin-top:2%;
+    padding-left:2%;
+}
+/*.navbar-fixed-bottom p{
     text-transform:uppercase;
     color:#18bc9c;
     font-size:12px;
@@ -112,7 +119,8 @@ footer {
 /*table on views/products/index*/
 .owlinfotable {
     border:1px solid #18bc9c;
-    border-radius:10px
+    border-radius:10px;
+    margin-bottom:80px;
 }
 
 .owlimage{
