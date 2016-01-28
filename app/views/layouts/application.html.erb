@@ -30,7 +30,7 @@
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-right pull-right">
                   <li class="hidden">
                       <a href="#page-top"></a>
                   </li>
@@ -44,52 +44,29 @@
                       <%=link_to "Contact", static_pages_contact_path %> 
                   </li>
               </ul>
+                  <div class="search">
+                    <%= form_tag("/products", method: "get") do %>
+
+                    <form class="navbar-form navbar-right" role="search">
+                        <%= label_tag(:q, "Search for") %>
+                        <%= text_field_tag(:q) %>
+                        <%= submit_tag "Search", class: 'btn btn-default navbar-btn' %> 
+                    </form>
+
+                    <% end %>
+                  </div>  
           </div>
           <!-- /.navbar-collapse -->
       </div>
       <!-- /.container-fluid -->
   </nav>
 
-
-<!--image carousel --> 
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <% @products.each do |product| %>
-  <div class="item<%= " active" if product == @products.first %>">
-      <div class="carousel-imgage">
-      <%= image_tag(product.image_url) %>
-      </div>
-      <div class="carousel-caption">
-        <%= product.name %>
-      </div>
-        </div>
-    <% end %>
-  </div> 
-
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+<!--removed carousel to a partial and applied it only to product and about page" 
 
 <%= yield %>
 
   <footer>
-      <p>Copyright &copy; owls R'Us</p>
+    <p>Copyright &copy; owls R'Us</p>
   </footer>
 
 </body>

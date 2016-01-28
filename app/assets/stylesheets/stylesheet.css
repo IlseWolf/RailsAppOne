@@ -75,6 +75,18 @@ p{
     border: 0;
 }
 
+.search form label {
+    color:#777;
+    padding-top:10px;
+    line-height:20px;
+    position:relative;
+    padding:10px 15px;
+}
+
+.search label:hover{
+    color: #18bc9c;
+
+}
 /*carousel on apllication.html*/
 
 .carousel-imgage {
