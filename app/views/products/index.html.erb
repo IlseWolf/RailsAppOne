@@ -2,8 +2,6 @@
 
 <h1 class="titelproductpage">Waiting for new owners</h1>
 
-<p><% @test_variable %></p>
-
 <!--
 <table class="producttable">
   <thead>
@@ -36,7 +34,7 @@
     <% @products.each do |product| %>
       <div class="col-sm-12 col-md-4">
         <h2><%= product.name %></h2>
-        <div class="owlinfotable text-center">
+          <div class="owlinfotable text-center">
             <div class="img-thumbnail owlimage"> 
               <%= image_tag(product.image_url)  %>
             </div>
@@ -44,8 +42,7 @@
             <p><%= product.description %></p>
             <p><%= product.colour %></p>
             <p> € <%= product.price %></p>
-        </div>
-      </div> <!--column-->
+        </div>  
     <% end %>
   </div>
 </div>

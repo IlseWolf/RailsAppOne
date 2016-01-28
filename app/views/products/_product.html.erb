@@ -1,0 +1,13 @@
+      <div class="col-sm-12 col-md-4">
+        <h2><%= product.name %></h2>
+        <div class="owlinfotable text-center">
+            <div class="img-thumbnail owlimage"> 
+              <%= image_tag(product.image_url)  %>
+            </div>
+            <p><i><%= product.latin_name %></i></p>
+            <p><%= product.description %></p>
+            <p><%= product.colour %></p>
+            <p> € <%= product.price %></p>
+        </div>
+
+        

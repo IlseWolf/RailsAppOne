@@ -35,13 +35,13 @@
                       <a href="#page-top"></a>
                   </li>
                   <li class="page-scroll">
-                      <a> Product <% link_to "Products", products_path %></a>
+                      <%= link_to "Products", products_path %>
                   </li>
                   <li class="page-scroll">
-                      <a>About <% link_to "about", static_pages_about_path %> </a>
+                      <%= link_to "about", static_pages_about_path %> 
                   </li>
                   <li class="page-scroll">
-                      <a>Contact <% link_to "Contact", static_pages_contact_path %> </a>
+                      <%=link_to "Contact", static_pages_contact_path %> 
                   </li>
               </ul>
           </div>
@@ -49,6 +49,7 @@
       </div>
       <!-- /.container-fluid -->
   </nav>
+
 
 <!--image carousel --> 
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

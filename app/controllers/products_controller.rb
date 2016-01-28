@@ -16,6 +16,7 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
     @products = Product.limit(3)
+  end 
   
 
   # GET /products/1/edit
