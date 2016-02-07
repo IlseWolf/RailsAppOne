@@ -28,36 +28,52 @@
               <a class="navbar-brand" href="#page-top">Owls R'us</a>
           </div>
 
+          <div class="search pull-left">
+            <%= form_tag("/products", method: "get") do %>
+            <form class="navbar-form navbar-right" role="search">
+                <%= label_tag(:q, "Search for") %>
+                <%= text_field_tag(:q) %>
+                <%= submit_tag "Search", class: 'btn btn-default navbar-btn' %> 
+            </form>
+              <% end %>
+          </div>           
+
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right pull-right">
-                  <li class="hidden">
-                      <a href="#page-top"></a>
-                  </li>
-                  <li class="page-scroll">
-                      <%= link_to "Products", products_path %>
-                  </li>
-                  <li class="page-scroll">
-                      <%= link_to "about", static_pages_about_path %> 
-                  </li>
-                  <li class="page-scroll">
-                      <%=link_to "Contact", static_pages_contact_path %> 
-                  </li>
-              </ul>
-                  <div class="search">
-                    <%= form_tag("/products", method: "get") do %>
-
-                    <form class="navbar-form navbar-right" role="search">
-                        <%= label_tag(:q, "Search for") %>
-                        <%= text_field_tag(:q) %>
-                        <%= submit_tag "Search", class: 'btn btn-default navbar-btn' %> 
-                    </form>
-
-                    <% end %>
-                  </div>  
+          <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">          
+              <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <%= link_to "Products", products_path %>
+                    </li>
+                    <li class="page-scroll">
+                        <%= link_to "about", static_pages_about_path %> 
+                    </li>
+                    <li class="page-scroll">
+                        <%=link_to "Contact", static_pages_contact_path %> 
+                    </li>
+                    <li class="login">
+                      <% if user_signed_in? %>
+                        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+                      <% else %>
+                        <%= link_to('Login', new_user_session_path) %>
+                      <% end %>
+                    </li>                    
+                </ul>
+              </div> 
           </div> <!-- /.navbar-collapse -->
       </div> <!-- /.container-fluid -->   
   </nav>
+
+<!--flash notice tages. This block will display a welcome message when you login -->
+  <p class="notice">
+    <%= notice %>
+  </p>  
+  <p class="alert">
+    <%= alert %>
+  </p>
 
 <%= yield %>
 

@@ -34,6 +34,10 @@ p{
 
 /*navbar on application.html*/
 
+.container {
+    width:100%
+}
+
 .navbar-fixed-top .navbar-brand {
     font-size: 2em;
     -webkit-transition: all .3s;
@@ -75,6 +79,9 @@ p{
     border: 0;
 }
 
+.search{
+    width:50% 
+}
 .search form label {
     color:#777;
     padding-top:10px;
@@ -87,6 +94,18 @@ p{
     color: #18bc9c;
 
 }
+.login a{
+    color:red;
+}
+/*.login{
+    padding-top:15px;
+    padding-bottom:15px; 
+    line-height:20px;
+    position:relative;
+    display:block;
+    padding:10px 15px;  
+} */
+
 /*carousel on apllication.html*/
 
 .carousel-imgage {
@@ -141,12 +160,24 @@ footer p{
 }
 
 .form-group {
-    width:50%;
+    width:40%;
     margin:0 auto;
-    margin-bottom:3%;
+    margin-bottom:5px; 
 }
 
 /*thank you page*/
 .hogwards{
     margin-bottom:3%;
+}    
+
+/*forms and buttons for devises*/
+.cancel {
+    padding-top:1%;
+    border-top:dotted;
+    border-bottom:dotted;
+    border-color:#18bc9c; 
+}
+
+.actions{
+    padding-top:0.5%;
 }
