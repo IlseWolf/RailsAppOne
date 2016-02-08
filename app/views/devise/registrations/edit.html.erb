@@ -17,17 +17,17 @@
 
       <div class="form-group">
         <% f.label :password , class:'pull-left'  %> <!--i class="pull-left"> (leave blank if you don't want to change it)</i--><br />
-        <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Enter password - leave open if you don't want to change a thing" %>
+        <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Old password - leave open if you don't want to change a thing" %>
       </div> 
 
       <div class="form-group">
         <% f.label :password_confirmation, class:'pull-left' %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "Password confirmation" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "New password" %>
       </div> 
 
       <div class="form-group">
         <% f.label :current_password , class:'pull-left' %> <!--i class="pull-left"> (we need your current password to confirm your changes)</i--><br />
-        <%= f.password_field :current_password, autocomplete: "off", class: "form-control", placeholder: "Current password - we need this to confirm its you"  %>
+        <%= f.password_field :current_password, autocomplete: "off", class: "form-control", placeholder: "New password confirmation"  %>
       </div>      
 
       <div class="actions">
