@@ -68,12 +68,16 @@
   </nav>
 
 <!--flash notice tages. This block will display a welcome message when you login -->
-  <p class="notice">
+<% if notice %>
+  <p id="notice" class=" alert alert-succes" role="alert">
     <%= notice %>
   </p>  
-  <p class="alert">
+<%end%>
+<%if alert %>  
+  <p id="alert" class=" alert alert-danger" role="alert">
     <%= alert %>
   </p>
+<%end%>  
 
 <%= yield %>
 

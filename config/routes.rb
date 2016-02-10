@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  devise_for :users
   resources :users
   resources :products
 
@@ -27,6 +26,12 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show, :create, :destroy]
   
   post 'static_pages/thank_you'
+
+  #default routes for signing in and out (devise gem) are 'user/sign_in' "user/sign_out"
+  #here we call it login and logout. That's what this line does (5.4)
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+
+
   # Example resource route with options:
   #   resources :products do
   #     member do
