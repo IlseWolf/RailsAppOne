@@ -80,7 +80,7 @@ p{
 }
 
 .search{
-    width:50% 
+    min-width:200px; 
 }
 .search form label {
     color:#777;
