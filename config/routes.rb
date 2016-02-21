@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :users
-  resources :products
+  #resources :products, :users
+  resources :products do
+    resources :comments
+    end
+  resources :users 
 
   get 'static_pages/about' 
 
@@ -49,6 +52,7 @@ Rails.application.routes.draw do
   #     resources :comments, :sales
   #     resource :seller
   #   end
+
 
   # Example resource route with more complex sub-resources:
   #   resources :products do
