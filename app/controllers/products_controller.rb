@@ -12,7 +12,7 @@ class ProductsController < ApplicationController
   #  end
   #end
 
-  def index
+  def index    
     if params[:q]
       search_term = params[:q]
       if Rails.env.production?
@@ -23,13 +23,13 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
-  end
+  end 
 
   # GET /products/1
   # GET /products/1.json
-def show
-  @comments = @product.comments.order("created_at DESC")
-end
+  def show
+    @comments = @product.comments.order("created_at DESC")
+  end
 
   # GET /products/new
   def new

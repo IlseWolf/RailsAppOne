@@ -1,35 +1,21 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="col-sm-6 col-md-4">
+  <div class="thumbnail">
+    <%= image_tag(@product.image_url, class: "owlimage") %>
+    <div class="caption">
+       <h2><%= @product.name %></h2>
+         <p> <span class="glyphicon glyphicon-menu-right" area-hidden="true"></span><i><%= @product.latin_name %></i></p>
+         <p><span class="glyphicon glyphicon-menu-right" area-hidden="true"></span><%= @product.description %></p>
+         <p><span class="glyphicon glyphicon-menu-right" area-hidden="true"></span><%= @product.colour %></p>
+         <p> <span class="glyphicon glyphicon-tag" area-hidden="true"></span> € <%= @product.price %></p>
+         <p> <span class="glyphicon glyphicon-thumbs-up" area-hidden="true"></span> Tell others how awesome you owls is, leave a review!!
+         </p>
+        <%= render 'new_comment' %>
+    </div> <!--caption-->
+    <%= render 'comments' %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
-
-<p>cd
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <strong>Latin_Name:</strong>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
