@@ -10,13 +10,14 @@
          <p> <span class="glyphicon glyphicon-tag" area-hidden="true"></span> € <%= @product.price %></p>
          <p> <span class="glyphicon glyphicon-thumbs-up" area-hidden="true"></span> Tell others how awesome you owls is, leave a review!!
          </p>
+      <div class= "av_comment">
+        <p>Average Rating:</p> 
+        <div class="rated" data-score="<%= @product.average_rating %>"></div> 
+      </div>
         <%= render 'new_comment' %>
         <%= render 'comments' %>
     </div> <!--caption-->
-    <div class= "av_comment">
-      <p>Average Rating:</p> 
-        <div class="rated" data-score="<%= @product.average_rating %>"></div> 
-    </div>
+    <%= will_paginate @comments %>
   </div>
 </div>
 

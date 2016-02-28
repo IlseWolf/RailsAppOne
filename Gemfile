@@ -50,7 +50,13 @@ group :production do
   gem 'rails_12factor'  
 end
 
+
+#flexible authentication solution for Rails based on Warden. Helps user sign in and out. 
 gem 'devise'
 
+#authorization library for Ruby on Rails which restricts what resources a given user is allowed to access
 gem 'cancancan'
+
+## Gemfile for Rails 3+, Sinatra, and Merb, to implemen page breaks 
+gem 'will_paginate', '~> 3.0.6'
 
