@@ -1,9 +1,34 @@
 <%= render '/products/carousel' %>
 
-<div class="static text-center">
-	<h1>Hi I'm Ilse's Ruby app</h1>
-	<%= params[:example_key] %>
-	<p> :-) </p>
-</div> 
 
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+  	<h1 class="text-center">Welcome to Owls R'Us</h1>
+  	 <h2 class="text-center">The first, and only webshop for owls. Find your owl, buy it, rate it, feed it, love it. </h2>
+  </div>
+</div>
 
+<div class="row owlinfo">
+  <div class="col-sm-12 col-md-6">
+    <div class="thumbnail beleefdelente">
+      <a href="http://www.beleefdelente.nl/vogel/bosuil">	
+        <%= image_tag "beleefdelente.jpg", class:"img-thumbnail"%>
+      </a>
+      <div class="caption">
+        <h2>Life footagae of a Woodowl</h2>
+        <p> She is currently breeding out three eggs. Click on the image to have a look</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6">
+    <div class="thumbnail wikipedia">
+      <a href="https://en.wikipedia.org/wiki/Owl">	
+        <%= image_tag "wikipedia.jpg", class:"img-thumbnail" %>
+      </a>
+      <div class="caption">
+        <h2>Learn more about Owls</h2>
+        <p>Fun fact: Many owl species have asymmetrical ears that are different sizes and different heights on their heads. This gives the birds superior hearing and the ability to pinpoint where prey is located, even if they can't see it</p>
+      </div>
+    </div>
+  </div>
+</div>

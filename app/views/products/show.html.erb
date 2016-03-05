@@ -9,25 +9,23 @@
          <p><span class="glyphicon glyphicon-menu-right" area-hidden="true"></span><%= @product.colour %></p>
          <p> <span class="glyphicon glyphicon-tag" area-hidden="true"></span> € <%= @product.price %></p>
          <div class= "av_comment row">
-           <div class="col-sm-6 col-md-2">
-             <span class="glyphicon glyphicon-hand-right" area-hidden="true"> </span> 
+           <div class="col-sm-4 col-md-4">
+             <p> <span class="glyphicon glyphicon-hand-right" area-hidden="true"> </span> Average rating</p> 
            </div>
-           <div class="col-sm-6 col-md-5">           
-             <p class="pull-left">Average rating</p>
-           </div>  
-           <div class="col-sm-6 col-md-5">  
-             <div class="rated pull-left" data-score="<%= @product.average_rating %>">
-            </div>
+           <div class="col-sm-8 col-md-8">  
+             <div class="rated" data-score="<%= @product.average_rating %>"></div>
            </div>
-          </div> 
-         <p class="pull-left"> <span class="glyphicon glyphicon-thumbs-up" area-hidden="true"></span> Tell others how awesome you owls is, leave a review!!
-         </p>
-         <div class="new_comment">
-           <%= render 'new_comment' %>
-         </div>  
-         <div>
-           <%= render 'comments' %>
-         </div>  
+        </div> 
+        <div class="leave_comment">
+          <p class="pull-left"> <span class="glyphicon glyphicon-thumbs-up" area-hidden="true"></span> Tell others how awesome you owls is, leave a review!!
+          </p>
+          <div class="new_comment">
+            <%= render 'new_comment' %>
+          </div>  
+        <div>
+        <div>
+          <%= render 'comments' %>
+        </div>  
     </div> <!--caption-->
     <%= will_paginate @comments %>
   </div>

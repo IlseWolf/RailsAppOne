@@ -14,7 +14,7 @@
 
 <body>
 
-<!--navigation --> 
+<!--navigation -->
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -33,6 +33,7 @@
               </button>
             </div> <!--closes navbar-header page scroll-->                        
             <!-- Collect the nav links, forms, and other content for toggling -->
+
             <div class="collapse navbar-collapse pull-left" id="bs-example-navbar-collapse-1">          
               <div>
                 <ul class="nav navbar-nav navbar-right">
@@ -63,13 +64,13 @@
         <div class="search">
             <%= form_tag("/products", method: "get") do %>
             <form class="navbar-form" role="search">
-              <div class="search">
-                <%= label_tag(:q, "Search for") %>
-                <%= text_field_tag(:q) %>
-                <%= submit_tag "Search", class: 'btn btn-default navbar-btn' %> 
-              </div>   
+                <ul class ="search">
+                  <li><%= label_tag(:q, "Search for") %></li>
+                  <li><%= text_field_tag (:q), class: "form-control", id:"search_area", placeholder:"Find your owl here"%></li>
+                  <li><%= submit_tag "Search", class: 'btn btn-default navbar-btn' %></li> 
+                  <% end %>
+                </ul>
             </form>
-              <% end %>
           </div>    
       </div> <!--col-xs-2 visible-xs-block border-->
     <div class="col-sm-3 col-lg-3 visible-sm-block visible-md-block visible-lg-block border">
