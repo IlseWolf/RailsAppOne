@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Product do
-	context "when the product has comments" do
+	context "when the product has comments" do 
       before do 
       	#this is all imput/ingredients for your test. To calculate @Product_average_rating 
       	#the variables product, user and comment are the ingridient and need to be defined
@@ -14,18 +14,17 @@ describe Product do
       end 
 
       it "returns the average rating of all 3 comment above eq 3" do
-      	expect(@product_average_rating).to eq "3"
+      	expect(@product.average_rating).to eq 3.0
       end   
-	end 
 
   context "validation check for if a product has no name" do
     before do
-      Product.new(description: "this is an invalid test")
+      @product = Product.new(description: "this is an invalid test") 
     end
 
     it "is invalid input" do
-      expect(Product.new(description: "this is a test for invalid input")).not_to_be_valid
+      expect(Product.new(description: "this is a test for invalid input")).not_to be_valid
     end
   end
 end
-
+end  
