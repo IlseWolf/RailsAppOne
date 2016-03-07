@@ -7,6 +7,14 @@ require 'spec_helper'
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
+#As of rspec-rails-2.0.0 and devise-1.1, the best way to put devise in your specs 
+#is simply to add the following into spec/rails_helper.rb: (6.3)
+require 'spec_helper'
+require 'rspec/rails'
+# note: require 'devise' after require 'rspec/rails'
+require 'devise'
+
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
@@ -27,6 +35,9 @@ require 'rspec/rails'
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
+  #added in exercise 6.3 for rspec 
+  config.include Devise::TestHelpers, :type => :controller
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
