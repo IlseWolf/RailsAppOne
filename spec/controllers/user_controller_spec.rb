@@ -38,7 +38,7 @@ describe UsersController, :type => :controller do
        it " tries to acces show page user2, redirects to root_path" do
          get :show, id: @user2.id
          expect(response).to have_http_status(401)
-         expect(response).to redirect_to(new_user_session_path) 
+         expect(response).to redirect_to(root_path) 
        end
      end
   end

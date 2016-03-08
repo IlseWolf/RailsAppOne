@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 
 
@@ -71,4 +72,8 @@ gem 'cancancan'
 
 ## Gemfile for Rails 3+, Sinatra, and Merb, to implemen page breaks 
 gem 'will_paginate', '~> 3.0.6'
+
+gem 'strike'
+
+#gem "thor", "~> 0.19.1"
 
