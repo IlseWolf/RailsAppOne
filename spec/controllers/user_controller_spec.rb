@@ -6,6 +6,7 @@ describe UsersController, :type => :controller do
     #@user = User.create!(email: "test@test.com", password: "testtest")
     #@user2 = User.create!(email: "test2@test.com", password: "test2test2")
     @user = FactoryGirl.create(:user)
+    @user2 = FactoryGirl.create(:user)
   end
 
   describe "GET #show" do
@@ -36,7 +37,7 @@ describe UsersController, :type => :controller do
 
        it " tries to acces show page user2, redirects to root_path" do
          get :show, id: @user2.id
-         expect(response).to have_http_status(401)
+         expect(response).to have_http_status(302)
          expect(response).to redirect_to(root_path) 
        end
      end
