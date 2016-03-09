@@ -22,7 +22,7 @@
            </div>
            <div class="col-sm-4 col-md-4">
             <%= form_tag "/payments/create" do %>
-             <%= render "stripe_checkout_button" %>
+             <%= render partial: "shared/stripe_checkout_button" %>
             <% end %>
            </div>
          </div>  
