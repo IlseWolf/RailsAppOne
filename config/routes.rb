@@ -34,7 +34,7 @@ Rails.application.routes.draw do
   #here we call it login and logout. That's what this line does (5.4)
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
 
-
+  post 'payments/create' => 'payments#create'
   # Example resource route with options:
   #   resources :products do
   #     member do
