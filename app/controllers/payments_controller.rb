@@ -16,6 +16,7 @@ class PaymentsController < ApplicationController
         )
 
       if charge.paid
+        logger.debug "create order"
         Order.create(product_id: @product, user_id: @user, total: @product.price)
       end
 
