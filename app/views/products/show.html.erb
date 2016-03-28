@@ -1,7 +1,7 @@
 
 <div class="col-sm-6 col-md-4">
   <div class="thumbnail">
-    <%= image_tag(@product.image_url, class: "owlimage") %>
+    <%= image_tag(@product.image_url, data_zoom_image: "@product.image_url", class: "owlimage img-zoom") %>
     <div class="caption">
        <h2><%= @product.name %></h2>
          <p> <span class="glyphicon glyphicon-menu-right" area-hidden="true"></span><i><%= @product.latin_name %></i></p>

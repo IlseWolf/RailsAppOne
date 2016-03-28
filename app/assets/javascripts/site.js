@@ -11,5 +11,7 @@ $(document).on('ready page:load', function(){
       score: function() {
         return $(this).attr('data-score');
       }
-    });
+    }); //raty stars rating sytem 
+
+    $('.img-zoom').elevateZoom(); //zoom on show page 
 });
