@@ -3,11 +3,13 @@
   <div class="thumbnail">
     <%= image_tag(@product.image_url, class: "img-zoom owlimage", data_zoom_image: @product.image_url) %>
     <div class="caption">
+     <%cache @product do %> 
        <h2><%= @product.name %></h2>
          <p> <span class="glyphicon glyphicon-menu-right" area-hidden="true"></span><i><%= @product.latin_name %></i></p>
          <p><span class="glyphicon glyphicon-menu-right" area-hidden="true"></span><%= @product.description %></p>
          <p><span class="glyphicon glyphicon-menu-right" area-hidden="true"></span><%= @product.colour %></p>
          <p> <span class="glyphicon glyphicon-tag" area-hidden="true"></span> € <%= @product.price %></p>
+       <%end%>  
          <div class= "av_comment row">
            <div class="col-sm-4 col-md-4">
              <p> <span class="glyphicon glyphicon-hand-right" area-hidden="true"> </span> Average rating</p> 

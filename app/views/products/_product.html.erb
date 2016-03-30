@@ -1,6 +1,7 @@
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <%= image_tag(product.image_url, class: "owlimage") %>
+    <% chache do %>   
       <div class="caption">
          <h2><%= link_to product.name, product %></h2>
            <p> <span class="glyphicon glyphicon-menu-right" area-hidden="true"></span><i><%= product.latin_name %></i></p>
@@ -10,5 +11,6 @@
            <p> <span class="glyphicon glyphicon-thumbs-up" area-hidden="true"></span> Tell others how awesome you owls is!
            </p>
       </div> <!--caption-->
+    <% end %>   
     </div>
   </div>
