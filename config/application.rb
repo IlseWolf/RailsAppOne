@@ -30,6 +30,7 @@ module Nameofapp
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+    config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
     config.active_record.raise_in_transactional_callbacks = true
   end
 end

@@ -80,3 +80,5 @@ gem 'angularjs-rails'
 
 gem 'dalli'
 
+gem 'redis-rails'
+
